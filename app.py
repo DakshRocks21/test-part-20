@@ -76,6 +76,8 @@ def update_note(note_id):
     return jsonify({"id": note_id, "message": "Note updated"})
 
 
+
+
 @app.route("/notes/<string:note_id>", methods=["DELETE"])
 def delete_note(note_id):
     """Delete a note"""
